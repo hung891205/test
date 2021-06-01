@@ -15,8 +15,17 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4">test01</div>
-            <div class="col-md-4">test02</div>
-            <div class="col-md-4">test03</div>
+            <div class="col-md-8">
+                <form oninput="result.value=parseInt(a.value)/(parseInt(b.value)/100*parseInt(b.value)/100)">
+                    <fieldset>
+                        <legend>請輸入值</legend>
+                        體重：<input type="number" id="a" name="a" value="70">kg<br>
+                        身高：<input type="number" id="b" name="b" value="180">cm<br>
+                        BMI：<output name="result"for="a b">21.6</output>
+                    </fieldset>
+                </form>
+            </div>
+            
         </div>
 
     </div>
